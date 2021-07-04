@@ -7,3 +7,4 @@ edition = "2018"
 
 [dependencies]
 term = "0.4.6"
+dns-lookup = "1.0.2"

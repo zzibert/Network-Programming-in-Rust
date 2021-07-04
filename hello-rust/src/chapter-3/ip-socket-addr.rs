@@ -24,5 +24,5 @@ fn main() {
     let global_sa = SocketAddr::new(global, 80u16);
     assert!(global_sa.is_ipv6());
 
-
+    
 }
