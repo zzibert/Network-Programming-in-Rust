@@ -10,6 +10,7 @@ fn handle_client(mut stream: TcpStream) -> Result<(), Error> {
     loop {
         let bytes_read = stream.read(&mut buf)?;
         if bytes_read == 0 { return Ok(()); }
+        println!("Sending back: {}", bytes_read);
         stream.write(&buf[..bytes_read])?;
     }
 }
